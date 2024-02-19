@@ -29,3 +29,12 @@ html{
     border-radius: 12px;
     text-align: center;
 }
+.green-btn{
+    background-color: #1DD100;
+    color: #fff;
+}
+
+li{
+    display: flex;
+    justify-content: space-between
+}
