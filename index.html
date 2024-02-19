@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,297 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-raleway">
-    <header>
-        
-    </header>
-    <main>
 
+<body class="font-raleway">
+    <header class="max-w-6xl mx-auto my-6">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-[14px] font-medium text-[#030712B3]">Home</a></li>
+                        <li><a class="text-[14px] font-medium text-[#030712B3]">About</a></li>
+                        <li><a class="text-[14px] font-medium text-[#030712B3]">Destination</a></li>
+                        <li><a class="text-[14px] font-medium text-[#030712B3]">Search</a></li>
+                    </ul>
+                </div>
+                <h1 class="text-4xl font-extrabold text-[ #030712]">P-Ticket</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[14px] font-medium text-[#030712B3]">Home</a></li>
+                    <li><a class="text-[14px] font-medium text-[#030712B3]">About</a></li>
+                    <li><a class="text-[14px] font-medium text-[#030712B3]">Destination</a></li>
+                    <li><a class="text-[14px] font-medium text-[#030712B3]">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-[#1DD100]">Bus
+                    <img src="./images/bus-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="hero h-[70vh] rounded-xl mt-5" style="background-image: url(images/banner.png)">
+            <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl">
+                    <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <br>
+                        <span class="text-[#1DD100]">P Paribahan</span>
+                    </h1>
+                    <p class="mb-5 font-inter text-[14px]">
+                        This is a smart bus ticketing system website.Please visit out website and enjoy our services.
+                        And enjoy your journey with our smart system for ticket.
+                    </p>
+                    <a href="#paribahan" class="buy-btn">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="max-w-6xl mx-auto my-6">
+        <div class="text-center mt-12 mb-6">
+            <h2 class="text-3xl font-bold text-[#030712]">Best offers for you</h2>
+            <div class="flex md:flex-row justify-center items-center m-6 gap-5">
+                <div class="bg-[#FFBF0F] flex flex-1 justify-center items-center px-3  rounded-xl">
+                    <div class="font-inter text-[#030712CC] mx-auto">
+                       <h3 class="text-4xl font-black">15% OFF</h3>
+                       <p class="text-[17px] font-medium">on your next purchase</p>
+                       <p class="text-[#03071280] text-[14px]">use by January 2024</p>
+                    </div>
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="mx-auto">
+                        <h4 class="text-[#030712] text-xl font-semibold">NEW15</h4>
+                        <p class="text-[#03071266] text-sm">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] flex flex-1 justify-center items-center px-3 rounded-xl">
+                    <div class="font-inter text-[#030712CC] mx-auto">
+                        <h3 class="text-4xl font-black">20% OFF</h3>
+                        <p class="text-[17px] font-medium">on your next purchase</p>
+                        <p class="text-[#03071280] text-[14px]">use by January 2024</p>
+                     </div>
+                     <div>
+                         <img src="./images/cupon-devider.png" alt="">
+                     </div>
+                     <div class="mx-auto">
+                         <h4 class="text-[#030712] text-xl font-semibold">Couple 20</h4>
+                         <p class="text-[#03071266] text-sm">Coupon Code</p>
+                     </div>
+                </div>
+            </div>
+                <button class="btn bg-transparent border-2 border-[#1DD100] m-6 text-[#1DD100] text-[14px]">See All Offers</button>
+        </div>
+        <!--paribahan section-->
+        <div class="bg-[#F7F8F8] text-center py-6 rounded-xl" id="paribahan">
+            <h1 class="text-4xl font-extrabold pt-9 text-[#030712]">P.H Paribahan</h1>
+            <p class="w-[630px] mx-auto my-6 font-inter text-[#03071299] text-[13px]">We provide best quality services for our clients.Here our paribahan types and seat section. You
+                can choose our paribahan and select your seat easily.
+            </p>
+            <div class="bg-white rounded-xl flex mx-5 mb-4">
+                    <div class="">
+                        <div class="p-5 flex justify-between">
+                            <div class="flex flex-1 justify-center">
+                                <div class="w-12 mr-4 mt-3">
+                                    <img src="./images/bus-logo.png" alt="">
+                                </div>
+                                <div class="text-left mr-20">
+                                    <h3 class="text-xl font-bold">Greenline Paribahan</h3>
+                                    <p class="text-[#03071299] font-inter text-[14px]">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button id="seat-left-btn" class="btn border-0 bg-[#1DD10026]  font-inter text-[13px] text-[#1DD100]">
+                                    <img src="./images/seat-green.png" alt="" class="w-6">40 Seats Left
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#F7F8F8] py-6 px-8 mt-8 ml-4 rounded-xl">
+                           <div class="flex justify-between py-3 text-[15px]">
+                              <p class="text-[#03071299]">Route</p>
+                              <p class="text-[#030712] text-[14px]">Dhaka - Sylhet</p>
+                           </div>
+                           <hr class="border-dashed  bg-[#03071233]">
+                           <div class="flex justify-between py-3 text-[15px]">
+                            <p class="text-[#03071299]">Departure Time</p>
+                            <p class="text-[#030712] text-[14px]">9:00 PM</p>
+                         </div>
+                         <hr class="border-dashed  bg-[#03071233]">
+                         <div class="flex justify-between gap-2 mt-4">
+                            <button class="btn bg-[#0307120D] text-[#030712CC] text-[12px] font-inter">
+                                Boarding Point - Laxmipur
+                            </button>  
+                            <button class="btn bg-[#0307120D] text-[#030712CC] text-[12px] font-inter">
+                                Dropping Point - Bogura
+                            </button>
+                            <button class="btn bg-[#0307120D] text-[#030712CC] text-[12px] font-inter">
+                                Est. Time - 11 Hour
+                            </button>
+                         </div>
+                        </div>
+                        </div>
+                <div class="mx-16">
+                    <img src="./images/info-devider.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/fare.png" alt="">
+                    <h5 class="text-2xl font-bold text-[#030712]">550 Taka</h5>
+                    <p class="text-lg text-[#03071299]">Per Seat</p>
+                </div>
+            </div>
+            <div class="bg-white mt-5 mx-5 rounded-xl">
+                <div class="flex justify-between p-6">
+                    <div class="float-left flex-1">
+                       <h4 class="text-[17px] font-semibold text-[#030712]">Select Your Seat</h4>
+                       <hr class="border-dashed  bg-[#03071233]">
+                       <div class="flex justify-between items-center gap-10 py-4">
+                          <div class="flex justify-between items-center mr-10">
+                            <img src="./images/seat-gray.png" alt="" class="w-6 mr-1">
+                            <p class="text-[#03071280] text-[14px]">Available</p>
+                          </div>
+                          <div class="flex justify-between items-center">
+                            <img src="./images/seat-green-filled.png" alt="" class="w-6 mr-1">
+                            <p class="text-[14px] text-[#1DD100]">Selected</p>
+                          </div>
+                       </div>
+                       <hr class="border-dashed  bg-[#03071233]">
+                       <div class="float-right bg-[#0307121A] py-4 px-10 rounded-xl mt-5 mb-10">
+                         <img src="./images/wheel.png" alt="">
+                       </div>
+                      <div class="mt-24">
+                        <div class="flex justify-between items-center">
+                            <p class="mr-6 text-[#03071280]">A</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">A1</div>
+                               <div class="seat-btn">A2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">A3</div>
+                                <div class="seat-btn">A4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">B</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">B1</div>
+                               <div class="seat-btn">B2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">B3</div>
+                                <div class="seat-btn">B4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">C</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">C1</div>
+                               <div class="seat-btn">C2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">C3</div>
+                                <div class="seat-btn">C4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">D</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">D1</div>
+                               <div class="seat-btn">D2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">D3</div>
+                                <div class="seat-btn">D4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">E</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">E1</div>
+                               <div class="seat-btn">E2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">E3</div>
+                                <div class="seat-btn">E4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">F</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">F1</div>
+                               <div class="seat-btn">F2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">F3</div>
+                                <div class="seat-btn">F4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">G</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">G1</div>
+                               <div class="seat-btn">G2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">G3</div>
+                                <div class="seat-btn">G4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">H</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">H1</div>
+                               <div class="seat-btn">H2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">H3</div>
+                                <div class="seat-btn">H4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">I</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">I1</div>
+                               <div class="seat-btn">I2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">I3</div>
+                                <div class="seat-btn">I4</div>
+                             </div>
+                         </div>
+                         <div class="flex justify-between items-center my-5">
+                            <p class="mr-6 text-[#03071280]">J</p>
+                            <div class="flex flex-1 justify-between mr-10 space-x-4">
+                               <div class="seat-btn">J1</div>
+                               <div class="seat-btn">J2</div>
+                            </div>
+                            <div class="flex flex-1 justify-between  space-x-4">
+                                <div class="seat-btn">J3</div>
+                                <div class="seat-btn">J4</div>
+                             </div>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="mx-8">
+                        <img src="./images/Line 1.png" alt="">
+                    </div>
+                    <div class="text-left flex-1">
+                        <h4 class="text-[17px] font-semibold text-[#030712]">Select Your Seat</h4>
+                        <hr class="border-dashed  bg-[#03071233]">
+                    </div>
+                        
+                </div>
+                
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
